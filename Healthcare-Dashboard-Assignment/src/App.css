@@ -1,0 +1,479 @@
+/* ==================
+.main-layout
+========================= */
+.main-layout{
+    grid-template-rows: 12rem 1fr;
+    grid-template-columns: 33rem repeat(6, 1fr);
+    height: 100lvh;
+    width: 100lvw;
+}
+.header-section{
+    grid-column: 1 / span 7;
+    grid-template-columns: 33rem repeat(6, 1fr);
+}
+
+.sidebar-section{
+    grid-column: 1/span 1;
+}
+
+.dashboard-main-content{
+   grid-column: 2/span 6;
+   background-color: var(--main-color);
+}
+/* =================================
+header
+==================================== */
+.header{
+    background-color: var(--main-color);
+}
+
+/* header left section */
+.header-left-section{
+    background-color: var(--secondary-color);
+    grid-column: 1/ span 1;
+    padding: 0 2rem;
+    align-items: center;
+}
+.app-logo{
+    padding:0 3rem;
+}
+.app-logo  h3{
+    font-weight: 600;
+    color: var(--sky-blue);
+}
+
+.app-logo span{
+   color: var(--black);
+}
+
+/* header-middle-section */
+.header-middle-section{
+    padding: 2rem 4rem 2rem 4rem;
+    grid-column: 2/span 3;
+}
+.header-middle-section .form{
+    height: 6rem;
+    padding: 0 1rem;
+    width: 100%;
+    gap: 3rem;
+}
+.search-bar-container, .notification-icon{
+      box-shadow: 0 0 1rem 0.1rem var(--hover-color);
+}
+.search-bar-container{
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+#user-input{
+    height: 90%;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+}
+#user-input::placeholder{
+    color: var(--placehoder-color);
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+.header-middle-section .form .notification-icon{
+    padding: 0 1.5rem;
+    border-radius: 1rem;
+    width: fit-content;
+}
+.header-middle-section .form .icons{
+    color: var(--purple);
+    height: 100%;
+}
+
+/* header-right-section */
+.header-right-section{
+    padding: 2rem 4rem 2rem 4rem;
+    gap: 2rem;
+    grid-column: 5 /span 3;
+    background-color: var(--secondary-color);
+}
+.user-profile{
+    height: 6rem;
+    gap: 0.5rem;
+}
+.user-profile .avatar{
+    background-color: var(--sky-blue);
+    border-radius: 1rem;
+}
+.user-profile :is(.avatar, img){
+    height: 100%;
+}
+
+.user-profile .user-name{
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+.header-right-section .add-btn{
+    background-color: var(--purple);
+    color: var(--main-color);
+    border-radius: 1rem;
+    padding: 0 1.2rem;
+    height: 6rem;
+}
+
+/* ==============================================
+side bar
+================================================ */
+.sidebar-section{
+    background-color: var(--secondary-color);
+    height: 100%;
+    padding: 1rem 2rem;
+}
+.nav-bar{
+    height: 100%;
+    padding: 0 3rem;
+}
+.nav-bar, .nav-bar ul{
+    gap: 2rem;
+}
+.nav-bar ul{
+    margin: 2rem 0;
+}
+
+.nav-bar :is(.nav-list-heading, .tool-list-heading){
+    color: var(--light-grey);
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-list :is(.nav-list-name, .icons), .tool-list :is(.tool-list-name, .icons){
+    color: var(--grey);
+}
+
+.nav-list .flex, .tool-list .flex{
+    align-items: center;
+    gap: 1rem;
+}
+.nav-list-name, .tool-list-name{
+    font-size: 2.3rem;
+    padding: 1rem;
+    font-weight: 0;
+}
+
+.tools-container {
+  height: 100%;
+}
+
+.tools-container li:last-child{
+    height: 100%;
+    align-items: flex-end;
+}
+/* ======================================
+dashboard-main-content
+==================================== */
+/* dashboard-left section */
+.dashboard-left-section{
+    padding:1rem 2rem;
+    gap: 1rem;
+}
+.dashboard-left-section > .grid{
+    grid-template-rows: 2fr 1fr;
+    height: 100%;
+}
+/* dashboard-overview */
+.dashboard-overview{
+   grid-template-columns: 1fr 0.5fr;
+   gap: 5rem;
+   margin: 2rem 0;
+   padding:0rem 5rem;
+}
+/* =======anatomy-section========= */
+.anatomy-section{
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    gap: 1rem;
+    border-radius: 2rem;
+}
+.zoom-icon{
+    justify-content: flex-end;
+}
+.human-anatomy-container{
+   height: 100%;
+}
+
+.illustration{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    width: 100%;
+    gap: 3rem;
+}
+
+/* indicators */
+.indicator{
+    gap: 2rem;
+    height: 6rem;
+}
+.indicator .icon{
+    font-size: 3rem;
+}
+.indicator-details{
+    gap: 1rem;
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 1rem;
+}
+
+.indicator .scan{
+    font-size: 5rem;
+    color: var(--light-grey);
+}
+
+.illustration #right{
+    flex-direction: row-reverse;
+    position: relative;
+    top:20%;
+    right: -5%;
+}
+.illustration #left{
+    position: relative;
+    top:50%;
+    left: -5%;
+}
+
+.indicator .issue{
+    background-color: var(--red);
+    color:var(--black);
+}
+
+.indicator .healthy{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+
+/* ========health-card======== */
+.health-card-container{
+    gap: 2rem;
+}
+.health-card{
+    gap:2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var(--secondary-color);
+}
+.health-card> .flex{
+   gap: 1.5rem;
+}
+.health-card .card-icon{
+    font-size: 4rem;
+}
+.health-card .date{
+    color: var(--light-grey);
+    font-size: 1.8rem;
+}
+.health-card .status-bar{
+    height: 1.5rem;
+    background-color: var(--primary);
+    border-radius: 1rem;
+}
+.health-card .status-bar > .status-progress-bar{
+    width: 80%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.health-card:nth-child(1) .status-progress-bar{
+    background-color: var(--red);
+}
+.health-card:nth-child(2)  .status-progress-bar{
+    background-color: var(--aqua-green);
+}
+.health-card:nth-child(3)  .status-progress-bar{
+    background-color: var(--orange);
+}
+
+/* =================================
+activity section
+==================================== */
+.activity-section{
+    margin: 1rem ;
+}
+.activity-container{
+    background-color: var(--secondary-color);
+    height: 100%;
+    padding: 3rem 3rem;
+    border-radius: 4rem;
+}
+
+.activity-header .appointment-nums{
+    color: var(--grey);
+    font-size: 2.2rem;
+}
+.bar-graph-container{
+    height: 100%;
+    gap:2rem;
+    padding: 2rem 4rem;
+}
+.individual-day-data{
+    gap:2rem;
+}
+
+.individual-day-data .day{
+    font-size: 2rem;
+    color: var(--grey);
+}
+.bar-container{
+    height: 100%;
+    gap: 2rem;
+}
+.bar-container .bar{
+    width: 1rem;
+    border-radius: 1rem;
+    height: 100%;
+    gap: 1rem;
+}
+.graph-bar-1 .progress{
+    height: 50%;
+}
+.graph-bar-2 .progress{
+    height: 60%;
+}
+.graph-bar-3 .progress{
+    background-color: var(--tint);
+    height: 25%;
+}
+.graph-bar-4 .progress{
+    height: 40%;
+}
+
+.bar .progress{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.individual-day-data:nth-of-type(odd) .graph-bar-1{
+    background-color: var(--tint);
+}
+.individual-day-data:nth-of-type(odd) .graph-bar-2 .progress{
+    background-color: var(--sky-blue);
+}
+.individual-day-data:nth-of-type(odd) .graph-bar-4 .progress{
+    background-color: var(--purple);
+}
+.individual-day-data:nth-of-type(even) .graph-bar-1 .progress-1{
+    background-color: var(--sky-blue);
+}
+.individual-day-data:nth-of-type(even) .graph-bar-1 .progress-2{
+    background-color: var(--purple);
+}
+
+.individual-day-data:nth-of-type(even) .graph-bar-2 .progress{
+    background-color: var(--purple);
+}
+.individual-day-data:nth-of-type(even) .graph-bar-4 .progress{
+    background-color: var(--sky-blue);
+}
+/* ======================
+dashboard-right-section
+========================= */
+.dashboard-right-section{
+    gap: 2rem;
+    background-color: var(--secondary-color);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem 2rem;
+}
+
+/* ===========================
+calendar-view
+================================ */
+.calendar-section{
+    padding: 0 1rem;
+    gap: 3rem;
+}
+.calendar-container{
+    height: 100%;
+}
+.calendar-header{
+    padding: 0rem 2rem;
+}
+.calendar-header .icon{
+    color: var(--purple);
+    font-size: 4rem;
+}
+.calendar-view{
+    gap: 0.5rem;
+}
+.calendar-grid-details{
+    border-radius: 2rem;
+    gap: 0.5rem;
+}
+.calendar-grid-details:nth-child(2){
+    background-color: var(--primary);
+}
+.calendar-grid-details .highlight {
+    color: var(--white);
+    border-radius: 1rem;
+    background-color: var(--purple);
+}
+.calendar-grid-details span{
+    font-size: 1.8rem;
+}
+.calendar-grid-details :is(span, h5){
+        padding: 1rem 1.5rem;
+        width: fit-content;
+}
+/* ===========appointment details============= */
+.appointment-details{
+   gap:2rem
+}
+.appointment-details .card-container{
+    padding: 2rem 3rem 4rem 3rem;
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 3rem;
+    gap:2rem
+}
+.card-container .row-1{
+    gap:8rem;
+}
+
+.card-container .doctor-name {
+    font-weight: 100;
+    font-size: 2.4rem;
+}
+/* ==============
+upcoming-schedule
+ ==================== */
+.upcoming-schedule-section{
+    margin: 1rem;
+    padding: 0 2rem;
+    gap: 3rem;
+}
+
+.upcoming-schedule-container > h5{
+    color: var(--grey);
+    font-weight: 300;
+}
+.upcoming-schedule-container{
+    gap: 2rem;
+}
+/*appointment card*/
+.appointment-card-container{
+    gap: 4rem;
+}
+.appointment-card{
+    background-color: var(--tint);
+    padding: 2rem 3rem 2rem 3rem;
+    border-radius: 3rem;
+    gap: 1.5rem;
+}
+
+.appointment-card >.flex{
+    gap: 4rem;
+}
+
+.appointment-card .icon{
+ font-size: 3rem;
+}
+.appointment-card .time{
+    font-size: 2.1rem;
+    font-weight: 100;
+    color: var(--light-black);
+}
+ 
