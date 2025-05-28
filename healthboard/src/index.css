@@ -181,6 +181,12 @@ reusable code
 /* ===========================
 media queries
 ============================ */
+@media (max-width:1800px) {
+    html {
+     overflow-y: hidden;
+    overflow-x: hidden;
+    }
+}
 @media (min-width:1440px) and (max-width:2000px) {
     html {
         font-size: 9px;

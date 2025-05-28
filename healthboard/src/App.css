@@ -22,11 +22,19 @@ layout
 
 .dashboard-main-content {
     grid-column: 2/span 6;
+    
 }
-
 /* ===========================
 media queries
 ============================ */
+@media  (max-width:1800px) {
+        .dashboard-main-content {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width:thin;
+    scrollbar-color: var(--primary);
+    }
+}
 @media (min-width:1025px) and (max-width:1800px) {
     .layout {
     grid-template-rows: 10rem 1fr 1fr;
@@ -43,10 +51,7 @@ media queries
     grid-column: 2/span 6;
     grid-row: 2/span 2;
 }
-    .dashboard-main-content {
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
+
 }
 @media (max-width:1025px) {
     .dashboard-main-content {
