@@ -1,6 +1,6 @@
 import { RiExpandHorizontalFill } from "react-icons/ri";
 import "../styles/calendar.css"
-import { calendarAppontmentDetails, calendarDetails } from "../data/calendarData";
+import { calendarAppontmentDetails, calendarDetails } from "../../../Healthcare-assignment/src/data/calendarData";
 export const CalendarView = () => {
     return (
         <section className="calendar-section flex flex-col">

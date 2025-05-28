@@ -1,4 +1,4 @@
-import { healthCard } from "../data/healthData";
+import { healthCard } from "../../../Healthcare-assignment/src/data/healthData";
 import "../styles/healthCard.css"
 
 export const HealthStatusCard = () => {

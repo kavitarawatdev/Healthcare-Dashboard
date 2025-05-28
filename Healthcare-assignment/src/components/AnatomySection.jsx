@@ -1,6 +1,6 @@
 import "../styles/anatomy.css"
 import { CiZoomIn } from "react-icons/ci";
-import { healthIndicator } from "../data/healthData";
+import { healthIndicator } from "../../../Healthcare-assignment/src/data/healthData";
 import { LuScanLine } from "react-icons/lu";
 export const AnatomySection = () => {
     return (
