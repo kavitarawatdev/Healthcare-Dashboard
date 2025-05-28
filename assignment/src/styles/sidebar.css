@@ -1,0 +1,85 @@
+/* ==============================================
+side bar
+================================================ */
+.sidebar-section{
+    background-color: var(--secondary-color);
+    height: 100%;
+    padding: 1rem 2rem;
+    position: sticky;
+    height: 100%;
+}
+.nav-bar{
+    height: 100%;
+    padding: 0 3rem;
+}
+.nav-bar a{
+    color: var(--grey);
+}
+.nav-bar, .nav-bar ul{
+    gap: 2rem;
+}
+.nav-bar ul{
+    margin: 2rem 0;
+}
+
+.nav-bar :is(.nav-list-heading, .tool-list-heading){
+    color: var(--light-grey);
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-list :is(.nav-list-name, .icons), .tool-list :is(.tool-list-name, .icons){
+    color: var(--grey);
+}
+
+.nav-list .flex, .tool-list .flex{
+    gap: 1rem;
+}
+
+.nav-list-name, .tool-list-name{
+    font-size: 2.3rem;
+    padding: 1rem;
+    font-weight: 0;
+}
+
+.tools-container {
+  height: 100%;
+}
+
+.tools-container li:last-child{
+    height: 100%;
+    align-items: flex-end;
+}
+
+@media (max-width:1025px) {
+      .sidebar-section{
+        position: sticky;
+        height: 100%;
+     }
+}
+
+@media (min-width:900px) and (max-width:1000px){
+    .nav-bar, .nav-bar ul{
+    gap: 1rem;
+    }
+}
+@media (min-width:700px) and (max-width:800px){
+    .nav-bar, .nav-bar ul{
+    gap: 1rem;
+}
+.nav-bar ul{
+    margin: 1rem 0;
+}
+}
+@media (min-width:0px) and (max-width:862px) {
+      .nav-list-name, .tool-list-name{
+        display: none;
+     }
+     .sidebar-section{
+       padding: 1rem;
+    }
+    .sidebar-section, .nav-bar, .nav-list, .tools-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}

@@ -1,0 +1,193 @@
+/* =================================
+header
+==================================== */
+.header {
+    background-color: var(--main-color);
+    display: grid;
+    grid-template-columns: 33rem repeat(2, 1fr);
+}
+
+/* header left section */
+.header-left-section {
+    background-color: var(--secondary-color);
+    grid-column: 1/ span 1;
+    padding: 0 2rem;
+}
+
+.app-logo {
+    padding: 0 3rem;
+}
+
+.app-logo h3 {
+    font-weight: 600;
+    color: var(--sky-blue);
+}
+
+.app-logo span {
+    color: var(--black);
+}
+
+.header-middle-section .form,
+.header-right-section .user-profile {
+    height: 5.5rem;
+}
+
+/*=============================
+ header-middle-section 
+ ============================*/
+.header-middle-section {
+    padding: 2rem 4rem;
+    grid-column: 2/span 1;
+    background-color: var(--main-color);
+}
+
+.header-middle-section .form {
+    padding: 0 1rem;
+    width: 100%;
+    gap: 3rem;
+}
+
+.search-bar-container,
+.notification-icon {
+    box-shadow: 0 0 1rem 0.1rem var(--hover-color);
+}
+
+.search-bar-container {
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+
+#user-input {
+    height: 90%;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#user-input::placeholder {
+    color: var(--placehoder-color);
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.header-middle-section .form .notification-icon {
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.header-middle-section .icon-medium {
+    color: var(--purple);
+    height: 100%;
+}
+
+/*==================================
+ header-right-section
+ ========================== */
+.header-right-section {
+    padding: 2rem 4rem 2rem 4rem;
+    gap: 2rem;
+    grid-column: 3/span 1;
+    background-color: var(--secondary-color);
+}
+
+.user-profile .avatar {
+    background-color: var(--sky-blue);
+    border-radius: 1rem;
+}
+
+.user-profile :is(.avatar, img) {
+    height: 100%;
+}
+
+.user-profile .user-name {
+    font-weight: 500;
+}
+
+.header-right-section .add-btn {
+    background-color: var(--purple);
+    color: var(--main-color);
+    height: 100%;
+    border-radius: 1rem;
+}
+
+/* ===========================
+media queries
+============================ */
+@media (min-width:1025px) and (max-width:1800px) {
+    .header {
+    grid-template-columns: 33rem 2fr 1fr;
+}
+   .header-right-section { 
+        background-color: var(--main-color);
+    }
+}
+@media (max-width:1025px) {
+    .header {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .header-middle-section {
+        width: 100%;
+    }
+
+    .header-right-section { 
+        background-color: var(--main-color);
+    }
+
+}
+
+@media (min-width:862px) and (max-width:1025px) {
+    .header {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        background-color: var(--main-color);
+    }
+
+    /* header left section */
+    .header-left-section {
+        width: 30rem;
+    }
+
+    .header-middle-section {
+        padding: 2rem 4rem;
+        width: 100%;
+        background-color: var(--main-color);
+    }
+
+    .header-right-section{
+     gap: 2rem; 
+    }
+}
+
+@media (max-width:862px){
+    .header-left-section {
+        background-color: var(--main-color);
+        padding: 1rem 0;
+    }
+    .header-middle-section .form,
+    .header-right-section .user-profile {
+        height: 4.5rem;
+    }
+    .app-logo {
+    padding: 0 1rem;
+    }
+    .header-middle-section {
+    padding: 1rem;
+     }
+     .header-middle-section .form {
+    gap: 1rem;
+}
+     .header-right-section  {
+    padding: 1rem;
+    gap: 1rem;
+   }
+   .user-name{
+    display: none;
+}
+
+}

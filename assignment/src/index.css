@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--main-color);
+    font-family: sans-serif;
+    font-size: 10px;
+    /* 1rem =10px */
+}
+
+:root {
+    --main-color: #fff;
+    --secondary-color: #F0F8FF;
+    --purple: #3935B1;
+    --sky-blue: #57e0d4;
+    --grey: hsl(0, 1%, 63%);
+    --light-black: #333;
+    --black: #000;
+    --light-grey: #9e9d9d;
+    --tint: #dce4fd;
+    --white: #ebe4e4;
+    --red: #eb5e6c;
+    --aqua-green: #28a745;
+    --green: #86A788;
+    --orange: #e69692;
+    --primary: #dee7f4;
+    --hover-color: #dbe1ea;
+    --placehoder-color: #6c6c6c;
+    --scrollbar-color: #b7cae6;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4rem;
+}
+
+h5 {
+    font-size: 3rem;
+}
+
+h6 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==================
+reusable code 
+====================*/
+.capitalize {
+    text-transform: capitalize;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-centered {
+    align-items: center;
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-2-col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-col {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-6-col {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-7-col {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.icon-xl {
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.icon-large {
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.icon-medium {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.icon-small {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+/* ===========================
+media queries
+============================ */
+@media (min-width:1440px) and (max-width:2000px) {
+    html {
+        font-size: 9px;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px) {
+    html {
+        font-size: 8px;
+    }
+}
+@media (min-width:900px) and (max-width:1025px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (min-width:612px) and (max-width:900px) {
+    html {
+        font-size: 6.5px;
+    }
+}
+
+@media(max-width:1025px) {
+    .icon-xl {
+        font-size: 4rem;
+    }
+
+    .icon-large {
+        font-size: 3rem;
+    }
+
+    .icon-medium {
+        font-size: 2.5rem;
+    }
+
+    .icon-small {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    h5 {
+        font-size: 2.5rem;
+    }
+
+    h6 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width:525px) and (max-width:612px) {
+    html {
+        font-size: 6px;
+    }
+}
+@media (min-width:375px) and (max-width:525px) {
+    html {
+        font-size: 5px;
+    }
+}
+@media (max-width:375px) {
+    html {
+        font-size: 3.5px;
+    }
+}

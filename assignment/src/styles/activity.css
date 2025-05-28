@@ -1,0 +1,238 @@
+/* =================================
+activity section
+==================================== */
+.activity-section {
+    margin: 1rem;
+}
+
+.activity-container {
+    background-color: var(--secondary-color);
+    height: 100%;
+    width: fit-content;
+    padding: 3rem;
+    border-radius: 4rem;
+}
+
+.activity-header .appointment-nums {
+    color: var(--grey);
+    font-size: 2.2rem;
+}
+
+.bar-graph-container {
+    height: 100%;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+.individual-day-data {
+    gap: 2rem;
+}
+
+.individual-day-data .day {
+    font-size: 2rem;
+    color: var(--grey);
+}
+
+.bar-container {
+    height: 100%;
+    gap: 2rem;
+}
+
+.bar-container .bar {
+    width: 1rem;
+    border-radius: 1rem;
+    height: 100%;
+    gap: 2rem;
+}
+
+.graph-bar-1 .progress {
+    height: 50%;
+}
+
+.graph-bar-2 .progress {
+    height: 60%;
+}
+
+.graph-bar-3 .progress {
+    background-color: var(--tint);
+    height: 25%;
+}
+
+.graph-bar-4 .progress {
+    height: 40%;
+}
+
+.bar .progress {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.individual-day-data:nth-of-type(odd) .graph-bar-1 {
+    background-color: var(--tint);
+}
+
+.individual-day-data:nth-of-type(odd) .graph-bar-2 .progress {
+    background-color: var(--sky-blue);
+}
+
+.individual-day-data:nth-of-type(odd) .graph-bar-4 .progress {
+    background-color: var(--purple);
+}
+
+.individual-day-data:nth-of-type(even) .graph-bar-1 .progress-1 {
+    background-color: var(--sky-blue);
+}
+
+.individual-day-data:nth-of-type(even) .graph-bar-1 .progress-2 {
+    background-color: var(--purple);
+}
+
+.individual-day-data:nth-of-type(even) .graph-bar-2 .progress {
+    background-color: var(--purple);
+}
+
+.individual-day-data:nth-of-type(even) .graph-bar-4 .progress {
+    background-color: var(--sky-blue);
+}
+/* @media (min-width:1025px) and (max-width:1441px){
+    .activity-container {
+    padding: 2rem;
+    height: 30rem;
+}
+.bar-graph-container {
+    height: 100%;
+    gap: 2rem;
+    padding: 2rem;
+}
+.bar-container {
+    height: 100%;
+    gap: 1rem;
+}
+
+.bar-container .bar {
+    width: 0.9rem;
+    gap: 1rem;
+}
+} */
+@media  (min-width:1800px) and (max-width:2371px)  {
+    .bar-graph-container {
+    padding: 1rem;
+}
+.bar-container {
+    gap: 1.8rem;
+}
+
+.bar-container .bar {
+    width: 0.8rem;
+    gap: 1.8rem;
+}
+
+}
+@media  (min-width:1025px) and (max-width:1100px)  {
+    .bar-graph-container {
+    padding: 2rem;
+}
+.bar-container {
+    gap: 1.5rem;
+}
+
+.bar-container .bar {
+    width: 1rem;
+    border-radius: 1rem;
+    height: 100%;
+    gap: 1.5rem;
+}
+
+}
+@media  (max-width:1025px) {
+    .bar-graph-container {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+
+@media (min-width:890px) and (max-width:1025px) {
+        .activity-section {
+        height: 35rem;
+        padding: 2rem;
+
+    }
+    .bar-graph-container {
+        gap: 2rem;
+    }
+}
+
+@media (min-width:689px) and (max-width:890px) {
+        .activity-section {
+        height: 35rem;
+        padding: 2rem;
+
+    }
+    .bar-graph-container {
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .bar-container {
+        gap: 1.5rem;
+    }
+
+}
+
+@media (min-width:664px) and (max-width:689px) {
+        .activity-section {
+        height: 35rem;
+        padding: 2rem;
+
+    }
+    .bar-container .bar {
+       width: 0.7rem;
+    }
+    .bar-graph-container {
+        gap: 1.8rem;
+        padding: 1rem;
+    }
+
+    .bar-container {
+        gap: 1.8rem;
+    }
+}
+@media (min-width: 437px) and (max-width:664px) {
+        .activity-section {
+        height: 30rem;
+        padding: 2rem 1rem;
+
+    }
+    .bar-container .bar {
+       width: 0.5rem;
+       gap: 1rem;
+    }
+    .bar-graph-container {
+        gap: 1.8rem;
+        padding: 1rem;
+    }
+
+    .bar-container {
+        gap: 1.8rem;
+    }
+}
+@media (max-width:437px) {
+        .activity-section {
+        height: 30rem;
+        padding: 2rem 1rem;
+
+    }
+    .bar-container .bar {
+       width: 0.5rem;
+       gap: 1rem;
+    }
+    .bar-graph-container {
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .bar-container {
+        gap: 1.5rem;
+    }
+}

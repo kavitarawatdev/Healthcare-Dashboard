@@ -1,0 +1,176 @@
+/* =======anatomy-section========= */
+.anatomy-section {
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    gap: 1rem;
+    border-radius: 2rem;
+}
+
+.human-anatomy-container {
+    height: 100%;
+}
+
+.illustration {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    width: 100%;
+    gap: 3rem;
+}
+
+/* indicators */
+.indicator {
+    gap: 2rem;
+    height: 6rem;
+}
+
+.indicator-details {
+    gap: 1rem;
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 1rem;
+}
+
+.indicator .scan {
+    color: var(--light-grey);
+}
+
+.illustration #right {
+    flex-direction: row-reverse;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+.illustration #left {
+    position: relative;
+    top: 50%;
+    right: 10%;
+}
+
+.indicator .issue {
+    background-color: var(--red);
+    color: var(--black);
+}
+
+.indicator .healthy {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+@media (min-width:2274px) and (max-width:2500px) {
+    .anatomy-section {
+        width: 50rem;
+    }
+
+    .illustration #right {
+        left: 25%;
+    }
+
+    .illustration #left {
+        right: 25%;
+    }
+}
+@media (min-width:2200px) and (max-width:2273px) {
+    .anatomy-section {
+        width: 45rem;
+    }
+
+    .illustration #right {
+        left: 35%;
+    }
+
+    .illustration #left {
+        right: 35%;
+    }
+}
+
+@media (min-width:1800px) and (max-width:2200px) {
+    .anatomy-section {
+        width: 40rem;
+    }
+
+    .illustration #right {
+        left: 44%;
+    }
+
+    .illustration #left {
+        right: 44%;
+    }
+}
+
+@media (min-width:1300px) and (max-width:1800px) {
+    .anatomy-section {
+        width: 70rem;
+    }
+       .illustration #right {
+        left: 3%;
+    }
+
+    .illustration #left {
+        right: 3%;
+    }
+}
+
+@media (min-width:1212px) and (max-width:1300px) {
+    .anatomy-section {
+        width: 60rem;
+    }
+       .illustration #right {
+        left: 12%;
+    }
+
+    .illustration #left {
+        right: 12%;
+    }
+}
+@media (min-width:1148px) and (max-width:1212px) {
+    .anatomy-section {
+        width: 50rem;
+    }
+    .illustration #right {
+        left: 24%;
+    }
+
+    .illustration #left {
+        right: 25%;
+    }
+}
+@media (min-width:1025px) and (max-width:1148px) {
+    .anatomy-section {
+        width: 50rem;
+    }
+       .illustration #right {
+        left: 25%;
+    }
+
+    .illustration #left {
+        right: 25%;
+    }
+}
+
+@media (min-width:670px) and (max-width:1025px) {
+    .anatomy-section {
+        width: 60rem;
+        height: 60rem;
+    }
+        .illustration #right{
+    left: 3%;
+}
+.illustration #left{
+    right:3%;
+}
+}
+
+@media (max-width:670px) {
+    .anatomy-section {
+        width: 50rem;
+        height: 60rem;
+    }
+        .illustration #right{
+    left: 15%;
+}
+.illustration #left{
+    right:15%;
+}
+}
